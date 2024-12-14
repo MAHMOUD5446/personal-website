@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.home-text {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  align-items: start;
+  gap: 20px;
+  width: 34rem;
+  margin-top: 80px;
+  margin-right: 80px;
+}
+.home-image {
+  margin-top: -130px;
+  padding: 90px 0 90px 100px;
+}
+.img-backgroud {
+  position: absolute;
+}
+.img-home {
+  position: relative;
+  left: 48px;
+  width: 22rem;
+  height: 26rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.home-number {
+  margin-top: -10rem;
+  margin-left: -6rem;
+  width: 3.2rem;
+  padding: 140px;
+}
+
+.float {
+  animation-name: ani-float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes ani-float {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.line {
+  width: 1px;
+  height: 38px;
+  background-color: gray;
+}
+@media (max-width: 90em) {
+  .home {
+    max-width: 30rem;
+    gap: -5rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .home-image[_ngcontent-ng-c280860091] {
+    margin-top: -130px;
+    padding: 90px 0 90px 0px;
+  }
+}
+@media (max-width: 890px) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .home-text {
+    order: 2;
+  }
+  .home-image {
+    order: 1;
+    margin-right: 30px;
+  }
+}
+.counter {
+  color: var(--main-c);
+}
+@media (max-width: 690px) {
+  .user-bg {
+    left: auto;
+    padding: 0;
+    margin: auto;
+  }
+}
+@media (max-width: 460px) {
+  .home-text {
+    height: fit-content;
+  }
+}

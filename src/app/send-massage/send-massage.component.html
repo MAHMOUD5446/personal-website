@@ -1,0 +1,130 @@
+<!-- send-massage.component.html -->
+<section id="contact-section" class="pb-120">
+  <div class="container">
+    <div data-aos="fade-up" class="section-heading aos-init aos-animate">
+      <div class="d-flex align-items-center gap-2 mb-3">
+        <div class="title-line"></div>
+        <h2 class="display-four n5-color fw-semibold">Get In Touch</h2>
+      </div>
+    </div>
+    <form
+      data-aos="zoom-in"
+      id="contact-form"
+      autocomplete="off"
+      class="mt-8 mt-md-15 p-5 p-md-10 rounded-5 brn4 aos-init aos-animate"
+    >
+      <div class="d-flex flex-wrap flex-md-nowrap gap-3 gap-md-6 mb-3 mb-md-6">
+        <!-- Name Field -->
+        <div
+          class="d-flex align-items-center gap-2 px-3 px-md-5 py-2 py-md-4 rounded-2 brn4 w-100"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="var(--main-b)"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M227.31,80.24,175.76,28.69A15.86,15.86,0,0,0,164.45,24H91.55a15.86,15.86,0,0,0-11.31,4.69L28.69,80.24A15.86,15.86,0,0,0,24,91.55v72.9a15.86,15.86,0,0,0,4.69,11.31l51.55,51.55A15.86,15.86,0,0,0,91.55,232h72.9a15.86,15.86,0,0,0,11.31-4.69l51.55-51.55A15.86,15.86,0,0,0,232,164.45V91.55A15.86,15.86,0,0,0,227.31,80.24ZM216,164.45,164.45,216H91.55L40,164.45V91.55L91.55,40h72.9L216,91.55Z"
+            ></path>
+          </svg>
+          <input
+            placeholder="Your Name*"
+            type="text"
+            id="name"
+            name="name"
+            ngModel
+            required
+          />
+        </div>
+        <!-- Email Field -->
+        <div
+          class="d-flex align-items-center gap-2 px-3 px-md-5 py-2 py-md-4 rounded-2 brn4 w-100"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="var(--main-b)"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
+            ></path>
+          </svg>
+          <input
+            placeholder="Email address*"
+            type="email"
+            id="email"
+            name="email"
+            ngModel
+            required
+          />
+        </div>
+      </div>
+      <div class="d-flex flex-wrap flex-md-nowrap gap-3 gap-md-6">
+        <!-- Phone Field -->
+        <div
+          class="d-flex align-items-center gap-2 px-3 px-md-5 py-2 py-md-4 rounded-2 brn4 w-100"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="var(--main-b)"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M176,16H80A24,24,0,0,0,56,40V216a24,24,0,0,0,24,24h96a24,24,0,0,0,24-24V40A24,24,0,0,0,176,16Zm8,200a8,8,0,0,1-8,8H80a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8h96a8,8,0,0,1,8,8ZM140,60a12,12,0,1,1-12-12A12,12,0,0,1,140,60Z"
+            ></path>
+          </svg>
+          <input placeholder="Phone*" id="phone" name="phone" ngModel />
+        </div>
+        <!-- Location Field -->
+        <div
+          class="d-flex align-items-center gap-2 px-3 px-md-5 py-2 py-md-4 rounded-2 brn4 w-100"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="var(--main-b)"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M200,224H150.54A266.56,266.56,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25a88,88,0,0,0-176,0c0,31.4,14.51,64.68,42,96.25A266.56,266.56,0,0,0,105.46,224H56a8,8,0,0,0,0,16H200a8,8,0,0,0,0-16ZM56,104a72,72,0,0,1,144,0c0,57.23-55.47,105-72,118C111.47,209,56,161.23,56,104Zm112,0a40,40,0,1,0-40,40A40,40,0,0,0,168,104Zm-64,0a24,24,0,1,1,24,24A24,24,0,0,1,104,104Z"
+            ></path>
+          </svg>
+          <input
+            placeholder="Location*"
+            type="text"
+            id="location"
+            name="location"
+            ngModel
+          />
+        </div>
+      </div>
+      <div class="mt-3 mt-md-6">
+        <textarea
+          class="n5-color px-3 px-md-6 py-2 py-md-4 rounded-2 brn4 w-100 h-120"
+          placeholder="Your Message:"
+          id="message"
+          name="message"
+          ngModel
+          autocomplete="off"
+          style="height: 132px"
+        ></textarea>
+      </div>
+
+      <button
+        id="contact-submit-btn"
+        type="submit"
+        class="primary-btnz fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill mt-5 mt-md-10"
+      >
+        Send Message
+        <span class="primary-btnSpan" style="top: 31.6562px; left: 3px"></span>
+      </button>
+    </form>
+  </div>
+</section>

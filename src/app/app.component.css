@@ -1,0 +1,6 @@
+.content {
+  width: 100vw; /* Takes up the full width of the viewport */
+  overflow-x: hidden;
+  /* Optional: Restricts content width for large screens */
+  margin: 0 auto; /* Centers the content */
+}

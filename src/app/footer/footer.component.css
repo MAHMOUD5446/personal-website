@@ -1,0 +1,14 @@
+.footer {
+  background-color: var(--bg-);
+}
+a {
+  text-decoration: none;
+}
+.massage {
+  width: 250px;
+  margin: 10px;
+}
+.massage-head {
+  display: flex;
+  align-items: start;
+}

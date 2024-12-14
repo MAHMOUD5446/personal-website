@@ -1,0 +1,68 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-scroll w-100">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">SHOMAN</a>
+
+      <!-- Toggle Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        ☰
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" [routerLink]="'/home'"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              [routerLink]="'/about'"
+              routerLinkActive="active"
+              [fragment]="'About-section'"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              [routerLink]="'/skill'"
+              routerLinkActive="active"
+              [fragment]="'skill-section'"
+              >Skills</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              [routerLink]="'/project'"
+              routerLinkActive="active"
+              [fragment]="'project-section'"
+              >Projects</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              [routerLink]="'/contact'"
+              routerLinkActive="active"
+              [fragment]="'contact-section'"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,1 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+:root,
+[data-bs-theme="light"] {
+  --bg-: #f3f3f3;
+  --bg-b: #fdfdfd;
+  --gray-a: #081119;
+  --gray-b: #0f2231;
+  --main-a: #edf7fe;
+  --main-b: #82c4f9;
+  --main-c: #5fb3f8;
+  --main-d: #2e6794;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  background-color: var(--bg-);
+}
+h1 {
+  font-size: 52px;
+  letter-spacing: -0.5px;
+}
+p {
+  font-size: 16px;
+}
+h2 {
+  font-size: 36px;
+}
+.counter {
+  font-size: 52px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-c);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--main-a);
+  border-radius: 5px;
+}
+.btn:link,
+.btn:visited {
+  background-color: var(--main-c);
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 14px 28px;
+
+  max-height: 50px;
+}
+.btn:hover,
+.btn:active {
+  background-color: var(--main-d);
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  display: inline-block;
+}
+.btns:link,
+.btns:visited {
+  background-color: var(--main-c);
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 14px 14px;
+  display: inline-block;
+}
+.btns:hover,
+.btns:active {
+  background-color: var(--main-d);
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 14px 14px;
+  display: inline-block;
+}
+/*////////////////////////////////*/
+@media (max-width: 90em) {
+}
+@media (max-width: 60em) {
+  .navbar {
+    max-width: 1rem;
+  }
+  .home {
+    max-width: 12rem;
+    gap: -5rem;
+  }
+}
