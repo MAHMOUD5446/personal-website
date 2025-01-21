@@ -26,6 +26,7 @@ a {
   border-radius: 12px;
   background-color: var(--bg-b);
   color: #000;
+  min-height: 420px;
   width: 90%;
 }
 

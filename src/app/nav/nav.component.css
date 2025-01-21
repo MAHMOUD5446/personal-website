@@ -90,10 +90,11 @@
   background-color: var(--main-b);
   padding: 1rem 2rem;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow when sticky */
+  margin-bottom: 60px;
 }
 
 .navbar-brand {
